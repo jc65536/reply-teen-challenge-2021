@@ -1,0 +1,14 @@
+touch $1.cpp
+touch $1.in
+cat > $1.cpp << EOF
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    ifstream in("$1-in.txt");
+    ofstream out("$1-out.txt");
+    
+}
+EOF
+
+code $1.cpp
