@@ -1,14 +1,26 @@
-touch $1.cpp
-touch $1.in
-cat > $1.cpp << EOF
+touch "$1.cpp"
+touch "$1-in.txt"
+cat > "$1.cpp" << EOF
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-    ifstream in("$1-in.txt");
-    ofstream out("$1-out.txt");
-    
+ifstream in("$1-in.txt");
+ofstream out("$1-out.txt");
+
+void solve() {
+
 }
+
+int main() {
+    int T;
+    in >> T;
+    for (int i = 0; i < T; i++) {
+        out << "Case #" << i + 1 << ": ";
+        solve();
+        out << endl;
+    }
+}
+
 EOF
 
-code $1.cpp
+code "$1.cpp"
