@@ -1,5 +1,5 @@
 touch "$1.cpp"
-touch "$1-in.txt"
+touch "$1.txt"
 cat > "$1.cpp" << EOF
 #include <bits/stdc++.h>
 using namespace std;
@@ -8,11 +8,11 @@ typedef long long ll;
 typedef vector<long long> vll;
 typedef vector<int> vi;
 
-ifstream in("$1-in.txt");
-ofstream out("$1-out.txt");
+ifstream in("$1.txt");
+ofstream out("$1.out");
 
 void solve() {
-
+    
 }
 
 int main() {
