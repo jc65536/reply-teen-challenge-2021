@@ -17,6 +17,7 @@ bool possible(ll t) {
     for (int i = 0; i < N; i++) {
         m[i] = (t - P[i]) / S[i];
     }
+    cout << "hello";
     sort(m.begin(), m.end());
     reverse(m.begin(), m.end());
     ll sum = 0;
