@@ -4,6 +4,10 @@ cat > "$1.cpp" << EOF
 #include <bits/stdc++.h>
 using namespace std;
 
+typedef long long ll;
+typedef vector<long long> vll;
+typedef vector<int> vi;
+
 ifstream in("$1-in.txt");
 ofstream out("$1-out.txt");
 
